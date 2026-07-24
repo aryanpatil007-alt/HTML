@@ -1,0 +1,66 @@
+*{
+    text-align: center;
+}
+#class1{
+    text-align: left;
+}
+#class2{
+    text-align: left;
+}
+#class3{
+    text-align: left;
+}
+#class4{
+    text-align: left;
+}
+#class5{
+    text-align: left;
+}
+
+body{
+    background-color: beige;
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    color: darkblue;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    text-shadow: 2px 2px gray;
+}
+
+h2{
+    color: royalblue;
+    text-align: center;
+}
+button{
+    background-color: white;
+    color: black;
+}
+button{
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:rgb(10, 241, 211);
+}
+
+footer{
+    text-align: center;
+    color: gray;
+}
+
+#feedbackBox{
+    color: black;
+    background-color: white;
+}
+#register-button{
+    background-color: black;
+    color: white; ;
+}
+#register-button:hover{
+    background-color: gray;
+}
