@@ -1,79 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Registeration Portal</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Already Registered?</h1>
 
-    <form action="account registered.html">
-    <h2 id="student-id">Students Registeration Portal</h2>
-    <br>
-    <b>Register Your Account</b>
-    <br><br>
+        <h2>Login to Your Account</h2>
 
-    <input id="class1" type="text" maxlength="12" size="20" placeholder="First Name:" required>
-    <br><br>
+        <p>Welcome back! Please enter your details below.</p>
 
-    <input id="class2" type="text" maxlength="12" size="20" placeholder="last Name:" required>
-    <br><br> 
+        <hr width="60%" />
 
-    <input id="class3" type="email" placeholder="Enter Email:" required>
-    <br><br>
+        <form action="account registered.html">
+            <label><b>Email Address</b></label>
+            <br />
+            <input type="email" placeholder="Enter Email" required />
 
-    <input id="class4" type="password" placeholder="Enter password" minlength="8" maxlength="10" required>
-    <br><br>
+            <br /><br />
 
-    <a href="forget.html">
-        <button type="button" size="2"> forget password</button>
-    </a>
+            <label><b>Password</b></label>
+            <br />
+            <input
+                type="password"
+                placeholder="Enter Password"
+                minlength="8"
+                maxlength="16"
+                required
+            />
 
-    <br><br>
+            <br /><br />
 
-    <label><b>Date of Birth:</b></label>
-    <input type="date" maxlength="2026-01-01" placeholder="Date of Birth" required>
-<br><br>
+            <a href="./forget.html">
+                <button type="button">Forgot Password?</button>
+            </a>
+            <br /><br />
 
-<label for="country"><b>Select Country:</b></label>
+            <input type="submit" value="Login" />
+        </form>
 
-<select id="country" name="country" required>
-    <option value="">Choose Country:</option>
-    <option>India</option>
-    <option>USA</option>
-    <option>United Kingdom</option>
-    <option>Canada</option>
-    <option>Australia</option>
-</select>
-<br><br>
+        <br />
 
-<label for="City"><b>City:</b></label>
-    <select name="City" id="City" required>
-        <option required>Select City</option>
-        <option required>Mumbai</option>
-        <option required>Pune</option>
-        <option required>Bangalore</option>
-    </select>
-<br><br>
+        <hr width="60%" />
 
-    <textarea name="feedback" id="feedbackBox" placeholder="You can give your feedback here" rows="3" columns="5"></textarea>
-    <input id="register-button" type="submit" value="Register">
-<br><br>
-    </form>
+        <p>Don't have an account?</p>
 
-<hr>
-<label>
-    <input id="terms" type="checkbox" required> <b>I agree to all terms and Conditions</b>
-</label>
-
-    <footer>
-        <h4>© 2026 Vertex Solutions
-        Privacy Policy
-        Terms & Conditions
-        Contact Us</h4>
-    </footer>
-
-
-</body>
+        <a href="./login.html">
+            <button type="button">Create New Account</button>
+        </a>
+    </body>
 </html>
