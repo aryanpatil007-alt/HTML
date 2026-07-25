@@ -64,3 +64,6 @@ footer{
 #register-button:hover{
     background-color: gray;
 }
+#back{
+    text-decoration: none;
+}
