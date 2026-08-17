@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* BODY */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fa;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* HEADER */
+
+header {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+
+header h1 {
+    margin: 0;
+
+    color: #004080;
+
+    font-size: 32px;
+}
+
+
+header p {
+    margin: 10px 0 0;
+
+    font-size: 16px;
+
+    color: #444;
+}
+
+
+/* MAIN */
+
+main {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+
+/* FORM */
+
+form {
+    width: 450px;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+/* FORM GROUP */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+/* LABELS */
+
+.form-group label {
+    font-weight: bold;
+
+    font-size: 15px;
+}
+
+
+/* INPUTS */
+
+.form-group input {
+    width: 100%;
+    padding: 10px 0 14px 0;
+    border: none;
+    border-bottom: 2px solid #aaa;
+    border-radius: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    outline: none;
+}
+
+
+/* INPUT FOCUS*/
+
+.form-group input:focus {
+    border-bottom: 2px solid #004080;
+}
+
+
+/* PASSWORD INFORMATION */
+
+.password-info {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+
+
+/* RESET BUTTON */
+
+.reset-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #004080;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* RESET BUTTON HOVER*/
+
+.reset-button:hover {
+    background-color: #0066aa;
+}
+
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    margin-top: 20px;
+
+    border-top: 1px solid #aaa;
+
+    text-align: center;
+}
+
+
+footer p {
+    margin: 0;
+
+    color: #666;
+
+    font-size: 14px;
+}

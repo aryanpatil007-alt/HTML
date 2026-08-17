@@ -1,57 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Already Registered? Login to Your Account</title>
-    </head>
-    <body>
-        <h1>Already Registered?</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Already Registered? Login to Your Account</title>
+    <link rel="stylesheet" href="./static/already.css">
+</head>
 
-        <h2>Login to Your Account</h2>
+<body>
 
-        <p>Welcome back! Please enter your details below.</p>
+    <h1>Already Registered?</h1>
 
-        <hr width="60%" />
+    <h2>Login to Your Account</h2>
 
-        <form action="./register.html">
-            <label><b>Email Address</b></label>
-            <br />
-            <input type="email" placeholder="Enter Email" required />
+    <p>Welcome back! Please enter your details below.</p>
+    
+    <hr>
 
-            <br /><br />
+    <form action="./registration_success.html">
 
-            <label><b>Password</b></label>
-            <br />
+        <!-- Email, password, forgot password, login -->
+
+        <div class="form-group">
+
+            <label for="email"><b>Email</b></label>
+
             <input
+                id="email"
+                type="email"
+                placeholder="Enter your email"
+                required
+            >
+            <label for="password"><b>Password</b></label>
+
+            <input
+                id="password"
                 type="password"
-                placeholder="Enter Password"
+                placeholder="Enter your password"
                 minlength="8"
                 maxlength="16"
                 required
-            />
-
-            <br /><br />
-
-            <a href="./forget.html">
-                <button type="button">Forgot Password?</button>
+            >
+             <a href="./forget.html" class="forgot-password">
+                Forgot Password?
             </a>
-            <br /><br />
-            <a href="registration_success.html">
-                <button type="button">Login</button>
-            </a>
+            <a href="./registration_success.html" class="login-button">
+                Login
+             </a>
 
-            
-        </form>
+        </div>            
+    </form>
 
-        <br />
+    <hr>
+    <!-- Create Account -->
 
-        <hr width="60%" />
+    <p>Don't have an account?</p>
 
-        <p>Don't have an account?</p>
+    <a href="./register.html" class="create-account">
+        Create New Account
+    </a>
 
-        <a href="./register.html">
-            <button type="button">Create New Account</button>
-        </a>
-    </body>
+</body>
 </html>

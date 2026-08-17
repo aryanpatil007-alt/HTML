@@ -1,37 +1,78 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-    </head>
-    <body>
-        <center>
-            <h1><u>Reset Your Password</u></h1>
-            <p><b>Enter your registered email and choose a new password.</b></p>
-            <input type="email" placeholder="Enter Email" />
-            <br /><br />
-            <input type="password" placeholder="Enter New Password" />
-            <br /><br />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./static/forgot.css">
+</head>
+<body>
+    <header>
+    <h1>Reset Your Password</h1>
+
+    <p>
+        Enter your registered email and choose a new password.
+    </p>
+</header>
+<!-- Email, new password, confirm password, reset password -->
+<main>
+    <form>
+        <div class="form-group">
+
+            <label for="email">Email</label>
             <input
-                type="password"
-                placeholder="Confirm New Password"
+                id="email"
+                type="email"
+                placeholder="Enter your email"
                 required
-            />
-            <br />
-            <small>Password must be 8-16 characters.</small>
-            <br /><br />
-            <a href="registration_success.html">
-                <button>Reset Password</button>
-            </a>
-            <hr />
-            
-        </center>
-        <footer>
-            <h4>
-                © 2026 Vertex Solutions Privacy Policy Terms & Conditions
-                Contact Us
-            </h4>
-        </footer>
-    </body>
+            >
+
+            <label for="new-password">New Password</label>
+
+            <input
+                id="new-password"
+                type="password"
+                placeholder="Enter new password"
+                minlength="8"
+                maxlength="16"
+                required
+            >
+
+            <label for="confirm-password">Confirm Password</label>
+
+            <input
+                id="confirm-password"
+                type="password"
+                placeholder="Confirm new password"
+                minlength="8"
+                maxlength="16"
+                required
+            >
+
+        </div>
+
+        <p class="password-info">
+            Password must be 8-16 characters.
+        </p>
+
+        <input
+            type="submit"
+            value="Reset Password"
+            class="reset-button"
+        >
+
+    </form>
+
+</main>
+
+<footer>
+    <p>
+        © 2026 Vertex Solutions |
+        Privacy Policy |
+        Terms & Conditions |
+        Contact Us
+    </p>
+</footer>
+
+</body>
 </html>

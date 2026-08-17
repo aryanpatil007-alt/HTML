@@ -127,36 +127,29 @@ form h2 {
 /* INPUTS */
 
 .form-group input,
-.form-group select,
-.form-group textarea {
+.form-group select {
     width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 2px solid #aaa;
+    border-radius: 0;
+    font-size: 16px;
+    outline: none;
+    opacity: 0.5;
+}
 
-    padding: 10px;
-
-    border: 1px solid #aaa;
-    border-radius: 5px;
-
-    font-family: Arial, Helvetica, sans-serif;
-
-    font-size: 14px;
+.form-group input:focus {
+    border-bottom: 2px solid #004080;
 }
 
 
+
 .form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
+.form-group select:focus{
     border-color: #004080;
 
     outline: none;
 }
-
-
-/* TEXTAREA */
-
-.form-group textarea {
-    resize: vertical;
-}
-
 
 /*  FORGOT PASSWORD */
 

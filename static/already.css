@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h1 {
+    margin-bottom: 10px;
+}
+
+
+h2 {
+    margin-bottom: 5px;
+}
+
+
+body > p {
+    margin-top: 0;
+}
+
+
+form {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.form-group input {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 2px solid #aaa;
+    font-size: 16px;
+    outline: none;
+}
+
+
+.form-group input:focus {
+    border-bottom: 2px solid #004080;
+}
+
+
+.forgot-password {
+    align-self: flex-end;
+    text-decoration: none;
+    color: #004080;
+}
+
+
+.login-button {
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #004080;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.create-account {
+    color: #004080;
+    text-decoration: none;
+}
+
+
+.create-account:hover {
+    text-decoration: underline;
+}
+
+
+hr {
+    width: 450px;
+    opacity: 0.3;
+}
