@@ -1,69 +1,261 @@
-*{
-    text-align: center;
-}
-#class1{
-    text-align: left;
-}
-#class2{
-    text-align: left;
-}
-#class3{
-    text-align: left;
-}
-#class4{
-    text-align: left;
-}
-#class5{
-    text-align: left;
+* {
+    box-sizing: border-box;
 }
 
-body{
-    background-color: beige;
-    font-family: Arial, sans-serif;
+
+/* BODY */
+
+body {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f4f7fa;
+    color: #222;
 }
 
-h1{
-    color: darkblue;
+
+/* HEADER */
+
+header {
+    background-color: #19e0e0;
+
+    color: white;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     text-align: center;
+}
+
+
+header h1 {
+    margin: 0;
+
+    font-size: 32px;
+
     text-transform: uppercase;
-    text-decoration: underline;
-    letter-spacing: 3px;
-    word-spacing: 5px;
-    text-shadow: 2px 2px gray;
+
+    letter-spacing: 2px;
 }
 
-h2{
-    color: royalblue;
-    text-align: center;
+
+header p {
+    margin: 10px 0 0;
+
+    color: #111;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
 }
-button{
+
+
+/* MAIN */
+
+main {
+    display: flex;
+    justify-content: center;
+
+    padding: 40px 20px;
+}
+
+
+/* FORM  */
+
+form {
+    width: 450px;
+
     background-color: white;
-    color: black;
+
+    padding: 30px;
+
+    border: 1px solid #ddd;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
 }
-button{
+
+
+/*  FORM HEADING */
+
+form h2 {
+    margin: 0;
+
+    color: #004080;
+
+    text-align: center;
+
+    font-size: 26px;
+}
+
+
+.form-description {
+    margin: 0;
+
+    text-align: center;
+
+    color: #666;
+
+    font-size: 14px;
+}
+
+
+/* FORM GROUP */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.form-group label {
+    font-weight: bold;
+
+    font-size: 14px;
+}
+
+
+/* INPUTS */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid #aaa;
+    border-radius: 5px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #004080;
+
+    outline: none;
+}
+
+
+/* TEXTAREA */
+
+.form-group textarea {
+    resize: vertical;
+}
+
+
+/*  FORGOT PASSWORD */
+
+.forgot-password {
+    align-self: flex-end;
+
+    color: #004080;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+
+/* TERMS */
+
+.terms {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 14px;
+}
+
+
+.terms input {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* REGISTER BUTTON */
+
+#register-button {
+    background-color: #1100fd;
+
+    color: white;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    font-size: 16px;
+
     cursor: pointer;
 }
 
-button:hover{
-    background-color:rgb(10, 241, 211);
+
+#register-button:hover {
+    background-color: #00aaff;
 }
 
-footer{
-    text-align: center;
-    color: gray;
-}
 
-#feedbackBox{
-    color: black;
-    background-color: white;
-}
-#register-button{
-    background-color: black;
-    color: white; ;
-}
-#register-button:hover{
-    background-color: gray;
-}
-#back{
+/*  BACK TO HOME  */
+
+.back-home {
+    align-self: center;
+
+    color: #004080;
+
     text-decoration: none;
+
+    font-size: 14px;
+}
+
+
+.back-home:hover {
+    text-decoration: underline;
+}
+
+
+/*  FOOTER   */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    border-top: 1px solid #aaa;
+
+    text-align: center;
+}
+
+
+footer p {
+    margin: 0;
+
+    color: #666;
+
+    font-size: 14px;
 }

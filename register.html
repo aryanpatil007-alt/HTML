@@ -1,81 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Registeration Portal</title>
+
+    <title>Student Registration Portal</title>
+
     <link rel="stylesheet" href="./static/style.css">
 </head>
+
 <body>
 
-    <form action="./registration_success.html">
-    <h2 id="student-id">Students Registeration Portal</h2>
-    <br>
-    <b>Register Your Account</b>
-    <br><br>
-
-    <input id="class1" type="text" maxlength="12" size="20" placeholder="First Name:" required>
-    <br><br>
-
-    <input id="class2" type="text" maxlength="12" size="20" placeholder="last Name:" required>
-    <br><br> 
-
-    <input id="class3" type="email" placeholder="Enter Email:" required>
-    <br><br>
-
-    <input id="class4" type="password" placeholder="Enter password" minlength="8" maxlength="10" required>
-    <br><br>
-
-    <a href="./forget.html">
-        <button type="button" size="2"> forget password</button>
-    </a>
-
-    <br><br>
-
-    <label><b>Date of Birth:</b></label>
-    <input type="date" maxlength="2026-01-01" placeholder="Date of Birth" required>
-<br><br>
-
-<label for="country"><b>Select Country:</b></label>
-
-<select id="country" name="country" required>
-    <option value="">Choose Country:</option>
-    <option>India</option>
-    <option>USA</option>
-    <option>United Kingdom</option>
-    <option>Canada</option>
-    <option>Australia</option>
-</select>
-<br><br>
-
-<label for="City"><b>City:</b></label>
-    <select name="City" id="City" required>
-        <option required>Select City</option>
-        <option required>Mumbai</option>
-        <option required>Pune</option>
-        <option required>Bangalore</option>
-    </select>
-<br><br>
-
-    <textarea name="feedback" id="feedbackBox" placeholder="You can give your feedback here" rows="3" columns="5"></textarea>
-    <input id="register-button" type="submit" value="Register">
-<br><br>
-    </form>
-<a href="homepage.html" id="back"><small>Back to Home</small></a>
+    <header>
+        <h1>Students Registration Portal</h1>
+        <p>Learn • Practice • Grow</p>
+    </header>
 
 
-<hr>
-<label>
-    <input id="terms" type="checkbox" required> <b>I agree to all terms and Conditions</b>
-</label>
+    <main>
+
+        <form action="./registration_success.html">
+
+            <h2>Student Registration</h2>
+
+            <p class="form-description">
+                Create your account and start your learning journey.
+            </p>
+
+
+            <!-- Personal Information -->
+
+            <div class="form-group">
+
+                <label for="class1">First Name</label>
+
+                <input
+                    id="class1"
+                    type="text"
+                    maxlength="12"
+                    placeholder="Enter your first name"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="class2">Last Name</label>
+
+                <input
+                    id="class2"
+                    type="text"
+                    maxlength="12"
+                    placeholder="Enter your last name"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="class3">Email</label>
+
+                <input
+                    id="class3"
+                    type="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="class4">Password</label>
+
+                <input
+                    id="class4"
+                    type="password"
+                    minlength="8"
+                    maxlength="10"
+                    placeholder="Enter your password"
+                    required
+                >
+
+            </div>
+
+
+            <a href="./forget.html" class="forgot-password">
+                Forgot Password?
+            </a>
+
+
+            <!-- Date of Birth -->
+
+            <div class="form-group">
+
+                <label for="dob">Date of Birth</label>
+
+                <input
+                    id="dob"
+                    type="date"
+                    required
+                >
+
+            </div>
+
+
+            <!-- Country -->
+
+            <div class="form-group">
+
+                <label for="country">Select Country</label>
+
+                <select id="country" name="country" required>
+
+                    <option value="">Choose Country</option>
+                    <option value="india">India</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="canada">Canada</option>
+                    <option value="australia">Australia</option>
+
+                </select>
+
+            </div>
+
+
+            <!-- City -->
+
+            <div class="form-group">
+
+                <label for="city">City</label>
+
+                <select id="city" name="city" required>
+
+                    <option value="">Select City</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="pune">Pune</option>
+                    <option value="bangalore">Bangalore</option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Feedback -->
+
+            <div class="form-group">
+
+                <label for="feedbackBox">Feedback</label>
+
+                <textarea
+                    name="feedback"
+                    id="feedbackBox"
+                    rows="4"
+                    cols="5"
+                    placeholder="You can give your feedback here">
+                </textarea>
+
+            </div>
+
+
+            <!-- Terms -->
+
+            <label class="terms">
+
+                <input
+                    id="terms"
+                    type="checkbox"
+                    required
+                >
+
+                <span>
+                    I agree to all terms and conditions
+                </span>
+
+            </label>
+
+
+            <!-- Register Button -->
+
+            <input
+                id="register-button"
+                type="submit"
+                value="Register"
+            >
+
+
+            <!-- Back to Home -->
+
+            <a href="./homepage.html" class="back-home">
+                Back to Home
+            </a>
+
+        </form>
+
+    </main>
+
 
     <footer>
-        <h4>© 2026 Vertex Solutions
-        Privacy Policy
-        Terms & Conditions
-        Contact Us</h4>
+
+        <p>
+            © 2026 Vertex Solutions
+            | Privacy Policy
+            | Terms & Conditions
+            | Contact Us
+        </p>
+
     </footer>
 
-
 </body>
+
 </html>
