@@ -91,3 +91,21 @@ hr {
     width: 450px;
     opacity: 0.3;
 }
+/* SMALL SCREEN */
+
+/* SMALL SCREEN */
+
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+    hr {
+        width: 90%;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+}
