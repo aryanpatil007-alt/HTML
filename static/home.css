@@ -1,52 +1,201 @@
-body{
-    font-family:Arial, Helvetica, sans-serif;
-   
-}
-body{
-    background-color:#f4f7fa;;
-}
-header{
-    background-color:#19e0e0;
-    color:white;
-    padding:30px;
-    text-transform:uppercase;
-    letter-spacing:2px;
-    text-align:center;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
 }
 
-header h1{
-    margin:0;
+
+/* HEADER */
+
+header {
+    background-color: #19e0e0;
+    color: white;
+
+    padding: 30px;
+
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#p1{
-    color:rgb(9, 9, 9);
-    font-size:15px;
-    letter-spacing:2px;
+header h1 {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+/* Header Tagline */
+
+#p1 {
+    color: #090909;
+
+    font-size: 15px;
     font-weight: bold;
-    margin-top:0px;
-    margin-bottom:0;
-    text-align:center;
+    letter-spacing: 2px;
+
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 
-#h2{
-    color:#004080;
-}
-button{
-    background-color:rgb(17, 0, 253);
-    color:white;
-    padding:10px 20px;
-    border:none;
-    border-radius:15px;  
-}
-button{
-    display:inline-block;
+
+/*  WELCOME SECTION */
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 20px;
 }
 
-button:hover{
-    background-color:#00aaff;
+.welcome h2 {
+    color: #004080;
+
+    margin-top: 0;
+    margin-bottom: 15px;
 }
-.feat{
-    display: inline-block;
-    text-align: left;
+
+.welcome p {
+    margin: 0;
+    font-size: 18px;
+}
+
+
+/* = HORIZONTAL LINE== */
+
+hr {
+    border: none;
+    border-top: 1px solid #aaaaaa;
+
+    margin: 0;
+}
+
+
+/* =REGISTRATION OPTIONS= */
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.options h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+/* Button Container */
+
+#container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+/* Links styled as buttons */
+
+.button {
+    background-color: #1100fd;
+    color: white;
+
+    padding: 12px 25px;
+
+    border: none;
+    border-radius: 20px;
+
+    text-decoration: none;
+}
+
+
+/* Hover */
+
+.button:hover {
+    background-color: #00aaff;
+}
+
+
+/* ==============================
+   PORTAL FEATURES
+   ============================== */
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.features h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+
+    font-style: italic;
+}
+
+
+/* Feature List */
+
+.feat {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+.feat li {
     line-height: 25px;
+}
+
+.portal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+.portal h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+
+    font-style: italic;
+}
+
+.portal p {
+    margin: 0;
+    font-size: 16px;
+}
+/*  FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px;
+}
+
+footer hr {
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+footer small {
+    text-align: center;
 }

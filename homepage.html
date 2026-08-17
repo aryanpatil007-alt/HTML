@@ -1,43 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Vertex Portal</title>
-        <link rel="stylesheet" href="./static/home.css" />
-    </head>
-    <body>
-        <center>
-            <header>
-                <h1>Students Registration Portal</h1>
-                <p id="p1">Learn •Practice •Grow</p>
-            </header>
 
-            <h2 id="h2">Welcome!</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            <p id="para3">
-                Welcome to the Students Registration Portal. Register yourself,
-                log in securely, track your learning progress, and improve your
-                skills—all in one place.
+    <title>Students Registration Portal</title>
+
+    <link rel="stylesheet" href="./static/home.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <h1>Students Registration Portal</h1>
+
+        <p id="p1">Learn • Practice • Grow</p>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Welcome Section -->
+        <section class="welcome">
+
+            <h2>Welcome!</h2>
+
+            <p>
+                Welcome to the Students Registration Portal.
+                Register yourself, log in securely, track your
+                learning progress, and improve your skills—all in one place.
             </p>
 
-            <hr />
+        </section>
 
-            
+
+        <hr>
+
+
+        <!-- Registration Options -->
+        <section class="options">
+
             <h3>Choose an Option</h3>
-            <a href="./register.html">
-                <button type="button">New User Registration</button>
-            </a>
-            <a href="./login.html">
-                <button type="button">Already Registered? Login</button>
-            </a>
-            <br /><br />
 
-            <hr />
+            <div id="container">
 
-            <h3>
-                <b><i>Portal Features</i></b>
-            </h3>
+                <a href="./register.html" class="button">
+                    New User Registration
+                </a>
+
+                <a href="./login.html" class="button">
+                    Already Registered? Login
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <hr>
+
+
+        <!-- Portal Features -->
+        <section class="features">
+
+            <h3>Portal Features</h3>
+
             <ul class="feat">
                 <li>Student Registration</li>
                 <li>Secure Login</li>
@@ -45,23 +77,37 @@
                 <li>Track Progress</li>
                 <li>View Skills</li>
             </ul>
-            <br />
 
-            <h3><i>Why Choose Our Portal?</i></h3>
+        </section>
 
-            <p id="para2">
-                Our portal provides a simple and secure way for students to
-                manage their learning journey. Register once, log in anytime,
-                monitor your progress, and keep improving your skills.
+
+        <!-- Why Choose Us -->
+        <section class="portal">
+
+            <h3>Why Choose Our Portal?</h3>
+
+            <p>
+                Our portal provides a simple and secure way for students
+                to manage their learning journey. Register once, log in
+                anytime, monitor your progress, and keep improving your skills.
             </p>
 
-            <br />
+        </section>
 
-            <hr width="60%" />
+    </main>
 
-            <small>
-                © 2026 Students Registration Portal | All Rights Reserved
-            </small>
-        </center>
-    </body>
+
+    <!-- Footer -->
+    <footer>
+
+        <hr>
+
+        <small>
+            © 2026 Students Registration Portal | All Rights Reserved
+        </small>
+
+    </footer>
+
+</body>
+
 </html>
