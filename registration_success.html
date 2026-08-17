@@ -1,44 +1,90 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-         <link rel="stylesheet" href="./static/register_sucess.css">
-    </head>
-    <body>
-        <center>
-            <br /><br />
-            <h2 id="main-heading">Account Registered!!</h2>
-            <header>
-                <br /><br />
-                
-                <p id="para1">What else you can do?</p>
-            </header>
-            <main>
-                <nav id="nav1">
-                    <a href="./progress.html">📈 Progress</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Successful</title>
+    <link rel="stylesheet" href="./static/registration_success.css">
+</head>
+<body>
+    <main class="success-page">
+        <!-- SUCCESS MESSAGE -->
+        <section class="success-section">
+            <div class="success-icon">
+                ✓
+            </div>
+            <h1>Registration Successful!</h1>
 
-                    <a href="./skills.html">💻 Skills</a>
+            <p class="success-message">
+                Your account has been created successfully.
+            </p>
 
-                    <a href="./homepage.html">🏠 Home</a>
-                    
-                    <a href="./login.html">🔐 Login</a>
-                </nav>
-            </main>
-                
+            <p class="welcome-message">
+                Welcome to Vertex Solutions. What would you like to explore next?
+            </p>
+        </section>
 
-                <br /><br />
-                <a href="./homepage.html">
-                    <button>Logout</button>
+        <!-- NAVIGATION -->
+        <section class="explore-section">
+            <h2>Explore Your Dashboard</h2>
+            <div class="navigation">
+                <a href="./progress.html" class="nav-card">
+                    <span class="nav-icon">📊</span>
+                    <span class="nav-title">Progress</span>
+                    <span class="nav-description">
+                        Track your progress
+                    </span>
                 </a>
-            </main>
-            <br />
-            <label>
-                <a href="./login.html">
-                    <button>Back to Already login</button>
+
+                <a href="./skills.html" class="nav-card">
+                    <span class="nav-icon">💻</span>
+                    <span class="nav-title">Skills</span>
+                    <span class="nav-description">
+                        Explore your skills
+                    </span>
                 </a>
-            </label>
-        </center>
-    </body>
+
+                <a href="./homepage.html" class="nav-card">
+                    <span class="nav-icon">🏠</span>
+                    <span class="nav-title">Home</span>
+                    <span class="nav-description">
+                        Return to homepage
+                    </span>
+                </a>
+
+                <a href="./login.html" class="nav-card">
+                    <span class="nav-icon">🔐</span>
+                    <span class="nav-title">Login</span>
+                    <span class="nav-description">
+                        Login to your account
+                    </span>
+                </a>
+            </div>
+        </section>
+
+        <!-- ACTIONS -->
+        <section class="action-section">
+            <a href="./homepage.html" class="primary-button">
+                Go to Home
+            </a>
+
+            <a href="./login.html" class="secondary-button">
+                Back to Login
+            </a>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>
+            © 2026 Vertex Solutions
+            <span>|</span>
+            Privacy Policy
+            <span>|</span>
+            Terms & Conditions
+            <span>|</span>
+            Contact Us
+        </p>
+    </footer>
+</body>
 </html>
