@@ -1,111 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Students Registration Portal</title>
+    <title>Student Learning Portal</title>
     <link rel="stylesheet" href="./static/home.css">
 </head>
-
 <body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            Student Learning Portal
+        </div>
+        <nav class="navigation">
+            <a href="homepage.html">Home</a>
 
-    <!-- Header -->
-    <header>
-
-        <h1>Students Registration Portal</h1>
-
-        <p id="p1">Learn • Practice • Grow</p>
-
+            <a href="login.html">Login</a>
+        </nav>
     </header>
 
-
-    <!-- Main Content -->
+    <!-- HERO SECTION -->
     <main>
+        <section class="hero">
+            <h1>Welcome to Vertex</h1>
 
-        <!-- Welcome Section -->
-        <section class="welcome">
-
-            <h2>Welcome!</h2>
+            <h2>Learn. Practice. Grow.</h2>
 
             <p>
-                Welcome to the Students Registration Portal.
-                Register yourself, log in securely, track your
-                learning progress, and improve your skills—all in one place.
+                Explore courses and build your skills.
             </p>
 
+            <a href="./register.html" class="get-started">
+                Get Started
+            </a>
         </section>
+        <!-- WHAT WE OFFER -->
 
+        <section class="offers">
 
-        <hr>
+            <h2>WHAT WE OFFER</h2>
+            <div class="offer-container">
 
-
-        <!-- Registration Options -->
-        <section class="options">
-
-            <h3>Choose an Option</h3>
-
-            <div id="container">
-
-                <a href="./register.html" class="button">
-                    New User Registration
+                <a href="courses.html" class="offer-card">
+                    Courses
                 </a>
 
-                <a href="./login.html" class="button">
-                    Already Registered? Login
+                <a href="skills.html" class="offer-card">
+                    Skills
                 </a>
 
+                <a href="progress.html" class="offer-card">
+                    Progress
+                </a>
             </div>
-
         </section>
-
-
-        <hr>
-
-
-        <!-- Portal Features -->
-        <section class="features">
-
-            <h3>Portal Features</h3>
-
-            <ul class="feat">
-                <li>Student Registration</li>
-                <li>Secure Login</li>
-                <li>Forgot Password</li>
-                <li>Track Progress</li>
-                <li>View Skills</li>
-            </ul>
-
-        </section>
-
-
-        <!-- Why Choose Us -->
-        <section class="portal">
-
-            <h3>Why Choose Our Portal?</h3>
-
-            <p>
-                Our portal provides a simple and secure way for students
-                to manage their learning journey. Register once, log in
-                anytime, monitor your progress, and keep improving your skills.
-            </p>
-
-        </section>
-
     </main>
 
+    <!-- FOOTER -->
 
-    <!-- Footer -->
-    <footer>
-
-        <hr>
-
-        <small>
-            © 2026 Students Registration Portal | All Rights Reserved
-        </small>
-
+    <footer class="footer">
+        <p>
+            © 2026 Student Learning Portal |
+            All Rights Reserved
+        </p>
     </footer>
-
 </body>
-
 </html>

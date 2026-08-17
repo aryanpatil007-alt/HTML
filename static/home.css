@@ -1,201 +1,195 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f7fa;
-    margin: 0;
+* {
+    box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #172033;
+}
 
 /* HEADER */
 
-header {
-    background-color: #19e0e0;
-    color: white;
-
-    padding: 30px;
-
-    text-align: center;
-    
+.header {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto 0;
+    padding: 20px 25px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
 
-header h1 {
-    margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
+/* LOGO */
 
-
-/* Header Tagline */
-
-#p1 {
-    color: #090909;
-
-    font-size: 15px;
+.logo {
+    font-size: 22px;
     font-weight: bold;
-    letter-spacing: 2px;
-
-    margin-top: 10px;
-    margin-bottom: 0;
+    color: #0b4f91;
 }
 
+/* NAVIGATION */
 
-/*  WELCOME SECTION */
-
-.welcome {
+.navigation {
     display: flex;
-    flex-direction: column;
     align-items: center;
-
-    text-align: center;
-
-    padding: 20px;
+    gap: 20px;
 }
 
-.welcome h2 {
-    color: #004080;
-
-    margin-top: 0;
-    margin-bottom: 15px;
-}
-
-.welcome p {
-    margin: 0;
-    font-size: 18px;
-}
-
-
-/* = HORIZONTAL LINE== */
-
-hr {
-    border: none;
-    border-top: 1px solid #aaaaaa;
-
-    margin: 0;
-}
-
-
-/* =REGISTRATION OPTIONS= */
-
-.options {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    padding: 20px;
-}
-
-.options h3 {
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
-
-/* Button Container */
-
-#container {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-
-/* Links styled as buttons */
-
-.button {
-    background-color: #1100fd;
-    color: white;
-
-    padding: 12px 25px;
-
-    border: none;
-    border-radius: 20px;
-
+.navigation a {
+    color: #172033;
     text-decoration: none;
-}
-
-
-/* Hover */
-
-.button:hover {
-    background-color: #00aaff;
-}
-
-
-/* ==============================
-   PORTAL FEATURES
-   ============================== */
-
-.features {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    padding: 20px;
-}
-
-.features h3 {
-    margin-top: 0;
-    margin-bottom: 15px;
-
-    font-style: italic;
-}
-
-
-/* Feature List */
-
-.feat {
-    display: flex;
-    flex-direction: column;
-
-    gap: 5px;
-
-    margin: 0;
-    padding: 0;
-
-    list-style-type: none;
-}
-
-.feat li {
-    line-height: 25px;
-}
-
-.portal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    text-align: center;
-
-    padding: 20px;
-}
-
-.portal h3 {
-    margin-top: 0;
-    margin-bottom: 15px;
-
-    font-style: italic;
-}
-
-.portal p {
-    margin: 0;
     font-size: 16px;
 }
-/*  FOOTER */
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-    padding: 20px;
+.navigation a:hover {
+    color: #0b4f91;
 }
 
-footer hr {
-    width: 60%;
-    margin-bottom: 10px;
-}
+/* HERO */
 
-footer small {
+.hero {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 60px 30px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
     text-align: center;
+}
+
+/* HERO HEADING */
+
+.hero h1 {
+    color: #0b4f91;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #666;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+/* GET STARTED */
+
+.get-started {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #0b4f91;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.get-started:hover {
+    background-color: #083d70;
+}
+
+/* OFFERS */
+
+.offers {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 40px 30px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.offers h2 {
+    color: #0b4f91;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+/* OFFER CONTAINER */
+
+.offer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* OFFER CARD */
+
+.offer-card {
+    width: 200px;
+    padding: 25px 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    color: #0b4f91;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer-card:hover {
+    background-color: #eef5ff;
+    border-color: #0b4f91;
+}
+
+/* FOOTER */
+
+.footer {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto 30px;
+    padding: 20px;
+    background-color: #0b4f91;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* SMALL SCREEN */
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    .navigation {
+        gap: 15px;
+    }
+    .hero {
+        padding: 45px 20px;
+    }
+    .hero h1 {
+        font-size: 30px;
+    }
+    .hero h2 {
+        font-size: 20px;
+    }
+    .offer-container {
+        flex-direction: column;
+    }
+    .offer-card {
+        width: 80%;
+    }
 }
