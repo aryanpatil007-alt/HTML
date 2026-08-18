@@ -21,8 +21,21 @@ body {
     text-align: center;
 }
 
+/* SUCCESS SECTION */
 
-/* HEADINGS */
+.success-section {
+    margin-bottom: 30px;
+}
+
+/* SUCCESS ICON */
+
+.success-icon {
+    font-size: 30px;
+    color: #0b4f91;
+    margin-bottom: 5px;
+}
+
+/* HEADING */
 
 .success-page h1 {
     color: #0b4f91;
@@ -30,43 +43,49 @@ body {
     margin-bottom: 15px;
 }
 
-.success-page > p {
+/* SUCCESS MESSAGE */
+
+.success-message {
     font-size: 18px;
-    color: #666;
     margin-bottom: 10px;
 }
 
+/* WELCOME MESSAGE */
 
-/* DASHBOARD */
-
-.dashboard {
-    margin-top: 45px;
+.welcome-message {
+    font-size: 18px;
+    color: #666;
 }
 
-.dashboard h2 {
-    color: #172033;
+/* EXPLORE SECTION */
+
+.explore-section {
+    margin-top: 35px;
+}
+
+/* EXPLORE HEADING */
+
+.explore-section h2 {
     font-size: 30px;
     margin-bottom: 30px;
 }
 
+/* NAVIGATION */
 
-/* DASHBOARD CONTAINER */
-
-.dashboard-container {
+.navigation {
     display: flex;
     justify-content: center;
     align-items: stretch;
     gap: 25px;
 }
 
+/* NAVIGATION CARD */
 
-/* DASHBOARD CARD */
-
-.dashboard-card {
+.nav-card {
     width: 250px;
     min-height: 180px;
     padding: 25px 20px;
-    background-color:white;
+    background-color: white;
     border: 1px solid #ddd;
     border-radius: 10px;
     text-decoration: none;
@@ -79,37 +98,35 @@ body {
 
 /* ICON */
 
-.dashboard-icon {
+.nav-icon {
     font-size: 40px;
     margin-bottom: 10px;
 }
 
-/* CARD HEADING */
+/* TITLE */
 
-.dashboard-card h3 {
-    margin: 5px 0 10px;
+.nav-title {
     color: #0b4f91;
     font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-/* CARD TEXT */
+/* DESCRIPTION */
 
-.dashboard-card p {
-    margin: 0;
+.nav-description {
     color: #666;
     font-size: 17px;
 }
 
-
 /* CARD HOVER */
 
-.dashboard-card:hover {
+.nav-card:hover {
     border-color: #0b4f91;
 }
+/* ACTIONS */
 
-/* BUTTONS */
-
-.dashboard-buttons {
+.action-section {
     margin-top: 35px;
     display: flex;
     justify-content: center;
@@ -117,10 +134,9 @@ body {
     gap: 20px;
 }
 
+/* PRIMARY BUTTON */
 
-/* HOME BUTTON */
-
-.home-button {
+.primary-button {
     padding: 12px 30px;
     background-color: #0b4f91;
     color: white;
@@ -128,15 +144,59 @@ body {
     text-decoration: none;
 }
 
-/* LOGIN BUTTON */
+/* SECONDARY BUTTON */
 
-.login-button {
+.secondary-button {
     padding: 12px 30px;
     background-color: white;
     color: #0b4f91;
     border: 1px solid #0b4f91;
     border-radius: 6px;
     text-decoration: none;
+}
+
+/* HOVER */
+
+.primary-button:hover {
+    background-color: #083d70;
+}
+
+.secondary-button:hover {
+    background-color: #f0f5fa;
+}
+/* BUTTON SECTION */
+
+.explore-buttons {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* BUTTONS */
+
+.home-button,
+.login-button {
+    padding: 12px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+/* HOME BUTTON */
+
+.home-button {
+    background-color: #0b4f91;
+    color: white;
+}
+
+
+/* LOGIN BUTTON */
+
+.login-button {
+    background-color: white;
+    color: #0b4f91;
+    border: 1px solid #0b4f91;
 }
 
 /* BUTTON HOVER */
@@ -167,19 +227,23 @@ body {
 /* SMALL SCREEN */
 
 @media (max-width: 700px) {
-    .dashboard-container {
+
+    .navigation {
         flex-direction: column;
         align-items: center;
     }
-    .dashboard-card {
+
+    .nav-card {
         width: 90%;
         max-width: 350px;
     }
-    .dashboard-buttons {
+
+    .action-section {
         flex-direction: column;
     }
-    .home-button,
-    .login-button {
+
+    .primary-button,
+    .secondary-button {
         width: 200px;
         text-align: center;
     }

@@ -3,98 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Successful</title>
-    <link rel="stylesheet" href="./static/registration_success.css">
+    <title>My Skills</title>
+    <link rel="stylesheet" href="./static/skills.css">
 </head>
 <body>
-    <main class="success-page">
+    <main class="skills">
+
         <h1>
-            Registration Successful
+            User, Your Skills
         </h1>
+
         <p>
-            Your account has been created successfully.
-        </p>
-        <p>
-            Welcome to Vertex Solutions.
-            What would you like to explore next?
+            Here are the skills you've added.
         </p>
 
-        <!-- DASHBOARD -->
+        <div class="skill-container">
+            <div class="skill-card">
+                <h2>
+                    HTML
+                </h2>
+                <p>
+                    Beginner
+                </p>
+            </div>
+            <div class="skill-card">
 
-        <section class="dashboard">
-            <h2>
-                Explore Your Dashboard
-            </h2>
-            <div class="dashboard-container">
+                <h2>
+                    CSS
+                </h2>
 
-                <!-- SKILLS -->
-
-                <a href="skills.html" class="dashboard-card">
-                    <div class="dashboard-icon">
-                        💻
-                    </div>
-
-                    <h3>
-                        Skills
-                    </h3>
-
-                    <p>
-                        Explore your skills
-                    </p>
-                </a>
-
-                <!-- PROGRESS -->
-
-                <a href="progress.html" class="dashboard-card">
-                    <div class="dashboard-icon">
-                        📊
-                    </div>
-
-                    <h3>
-                        Progress
-                    </h3>
-
-                    <p>
-                        User, Your Progress
-                    </p>
-                </a>
-
-                <!-- HOME -->
-                <a href="homepage.html" class="dashboard-card">
-                    <div class="dashboard-icon">
-                        🏠
-                    </div>
-
-                    <h3>
-                        Home
-                    </h3>
-
-                    <p>
-                        Return to homepage
-                    </p>
-                </a>
+                <p>
+                    Beginner
+                </p>
             </div>
 
-            <!-- BUTTONS -->
+            <div class="skill-card">
 
-            <div class="dashboard-buttons">
-                <a href="homepage.html" class="home-button">
-                    Go to Home
-                </a>
+                <h2>
+                    JavaScript
+                </h2>
 
-                <a href="login.html" class="login-button">
-                    Back to Login
-                </a>
+                <p>
+                    Intermediate
+                </p>
             </div>
-        </section>
+
+            <div class="skill-card">
+
+                <h2>
+                    Python
+                </h2>
+
+                <p>
+                    Intermediate
+                </p>
+            </div>
+
+            <a href="./add_skill.html" class="skill-card add-skill">
+                <span class="plus">
+                    +
+                </span>
+                <p>
+                    Add Skill
+                </p>
+            </a>
+        </div>
+
+        <a href="./registration_success.html" class="back-button">
+            Back
+        </a>
     </main>
-
-    <!-- FOOTER -->
-
-    <footer class="footer">
-        <p>
-            © 2026 Vertex Solutions
-        </p>
-    </footer>
 </body>
 </html>
