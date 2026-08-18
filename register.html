@@ -4,12 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Student Registration Portal</title>
-
     <link rel="stylesheet" href="./static/style.css">
 </head>
-
 <body>
 
     <header>
@@ -17,24 +14,17 @@
         <p>Learn • Practice • Grow</p>
     </header>
 
-
     <main>
-
         <form action="./registration_success.html">
-
             <h2>Student Registration</h2>
-
             <p class="form-description">
                 Create your account and start your learning journey.
             </p>
 
-
             <!-- Personal Information -->
 
             <div class="form-group">
-
                 <label for="class1">First Name</label>
-
                 <input id="class1" type="text" maxlength="12" placeholder="Enter your first name" required>
             </div>
 
@@ -43,25 +33,15 @@
                 <input id="class2" type="text" maxlength="12" placeholder="Enter your last name" required>
             </div>
 
-
             <div class="form-group">
-
                 <label for="class3">Email</label>
-
                 <input
                     id="class3"
                     type="email"
                     placeholder="Enter your email"
                     required
                 >
-
-            </div>
-
-
-            <div class="form-group">
-
                 <label for="class4">Password</label>
-
                 <input
                     id="class4"
                     type="password"
@@ -70,31 +50,19 @@
                     placeholder="Enter your password"
                     required
                 >
+                <label for="dob">Date of Birth</label>
+
+                <input id="dob" type="date" required>
 
             </div>
-
-
             <a href="./forget.html" class="forgot-password">
                 Forgot Password?
             </a>
 
-
-            <!-- Date of Birth -->
-
-            <div class="form-group">
-
-                <label for="dob">Date of Birth</label>
-
-                <input id="dob" type="date" required>
-            </div>
-
-
             <!-- Country -->
 
             <div class="form-group">
-
                 <label for="country">Select Country</label>
-
                 <select id="country" name="country" required>
 
                     <option value="">Choose Country</option>
@@ -103,44 +71,31 @@
                     <option value="uk">United Kingdom</option>
                     <option value="canada">Canada</option>
                     <option value="australia">Australia</option>
-
                 </select>
-
             </div>
-
-
             <!-- City -->
 
             <div class="form-group">
-
                 <label for="city">City</label>
-
                 <select id="city" name="city" required>
-
                     <option value="">Select City</option>
                     <option value="mumbai">Mumbai</option>
                     <option value="pune">Pune</option>
                     <option value="bangalore">Bangalore</option>
-
                 </select>
-
             </div>
             <!-- Terms -->
 
             <label class="terms">
-
                 <input
                     id="terms"
                     type="checkbox"
                     required
                 >
-
                 <span>
                     I agree to all terms and conditions
                 </span>
-
             </label>
-
 
             <!-- Register Button -->
 
@@ -150,29 +105,20 @@
                 value="Register"
             >
 
-
             <!-- Back to Home -->
-
             <a href="./homepage.html" class="back-home">
                 Back to Home
             </a>
-
         </form>
-
     </main>
 
-
     <footer>
-
         <p>
             © 2026 Vertex Solutions
             | Privacy Policy
             | Terms & Conditions
             | Contact Us
         </p>
-
     </footer>
-
 </body>
-
 </html>

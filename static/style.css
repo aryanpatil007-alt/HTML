@@ -2,127 +2,92 @@
     box-sizing: border-box;
 }
 
-
 /* BODY */
 
 body {
     margin: 0;
-
     font-family: Arial, Helvetica, sans-serif;
-
     background-color: #f4f7fa;
     color: #222;
 }
-
 
 /* HEADER */
 
 header {
     background-color: #19e0e0;
-
     color: white;
-
     padding: 30px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
     text-align: center;
 }
 
-
 header h1 {
     margin: 0;
-
     font-size: 32px;
-
     text-transform: uppercase;
-
     letter-spacing: 2px;
 }
-
 
 header p {
     margin: 10px 0 0;
-
     color: #111;
-
     font-weight: bold;
-
     letter-spacing: 2px;
 }
-
 
 /* MAIN */
 
 main {
     display: flex;
     justify-content: center;
-
     padding: 40px 20px;
 }
-
 
 /* FORM  */
 
 form {
     width: 450px;
-
     background-color: white;
-
     padding: 30px;
-
     border: 1px solid #ddd;
     border-radius: 10px;
-
     display: flex;
     flex-direction: column;
-
     gap: 18px;
 }
-
 
 /*  FORM HEADING */
 
 form h2 {
     margin: 0;
-
     color: #004080;
-
     text-align: center;
-
     font-size: 26px;
 }
 
 
 .form-description {
     margin: 0;
-
     text-align: center;
-
     color: #666;
-
     font-size: 14px;
 }
-
 
 /* FORM GROUP */
 
 .form-group {
     display: flex;
     flex-direction: column;
-
     gap: 7px;
 }
 
 
 .form-group label {
     font-weight: bold;
-
     font-size: 14px;
 }
-
 
 /* INPUTS */
 
@@ -142,8 +107,6 @@ form h2 {
     border-bottom: 2px solid #004080;
 }
 
-
-
 .form-group input:focus,
 .form-group select:focus{
     border-color: #004080;
@@ -155,11 +118,8 @@ form h2 {
 
 .forgot-password {
     align-self: flex-end;
-
     color: #004080;
-
     text-decoration: none;
-
     font-size: 14px;
 }
 
@@ -173,11 +133,8 @@ form h2 {
 
 .terms {
     display: flex;
-
     align-items: center;
-
     gap: 8px;
-
     font-size: 14px;
 }
 
@@ -192,17 +149,11 @@ form h2 {
 
 #register-button {
     background-color: #1100fd;
-
     color: white;
-
     padding: 12px;
-
     border: none;
-
     border-radius: 20px;
-
     font-size: 16px;
-
     cursor: pointer;
 }
 
@@ -211,16 +162,12 @@ form h2 {
     background-color: #00aaff;
 }
 
-
 /*  BACK TO HOME  */
 
 .back-home {
     align-self: center;
-
     color: #004080;
-
     text-decoration: none;
-
     font-size: 14px;
 }
 
@@ -229,26 +176,20 @@ form h2 {
     text-decoration: underline;
 }
 
-
 /*  FOOTER   */
 
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
-
     padding: 20px;
-
     border-top: 1px solid #aaa;
-
     text-align: center;
 }
 
 
 footer p {
     margin: 0;
-
     color: #666;
-
     font-size: 14px;
 }
