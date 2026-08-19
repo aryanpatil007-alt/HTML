@@ -99,12 +99,14 @@ form {
     color: white;
     font-size: 15px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 /* ADD BUTTON HOVER */
 
 .button-group button:hover {
     background-color: #083d70;
+    transition: background-color 0.3s steady;
 }
 
 /* BACK LINK */
@@ -124,6 +126,7 @@ form {
 .button-group a:hover {
     background-color: #0b4f91;
     color: white;
+    transition: background-color 0.3s ease;
 }
 
 /* SMALL SCREEN */
