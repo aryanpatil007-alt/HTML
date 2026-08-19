@@ -8,12 +8,6 @@ body {
     background-color: #f5f7fa;
     color: #172033;
 }
-#heading {
-    text-align: center;
-    margin-top: 30px;
-    color: #0b4f91;
-    font-size: 36px;
-}
 
 /* COURSE PAGE */
 
@@ -22,7 +16,6 @@ body {
     max-width: 1000px;
     margin: 40px auto;
 }
-
 
 /* COURSE INTRO */
 
@@ -42,7 +35,6 @@ body {
     font-size: 20px;
 }
 
-
 /* COURSE INFORMATION */
 
 .course-info {
@@ -51,15 +43,18 @@ body {
     gap: 15px;
 }
 
+/* LEVEL */
+
 .level {
     padding: 8px 18px;
     background-color: #dbeafe;
     color: #172033;
     border-radius: 20px;
     font-weight: bold;
-
     transition: transform 0.3s ease;
 }
+
+/* PROGRESS */
 
 .progress {
     padding: 8px 18px;
@@ -67,7 +62,6 @@ body {
     color: #172033;
     border-radius: 20px;
     font-weight: bold;
-
     transition: transform 0.3s ease;
 }
 
@@ -143,6 +137,7 @@ body {
 }
 
 /* BUTTON HOVER */
+
 .continue-button:hover {
     background-color: #083d70;
     transform: translateY(-2px);
